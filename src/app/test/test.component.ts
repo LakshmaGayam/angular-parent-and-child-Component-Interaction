@@ -13,7 +13,7 @@ export class TestComponent implements OnInit {
 
   ngOnInit() {
   }
-  eventfited()
+  eventfired()
   {
     this.Childevent.emit("data coming from child");
   }
