@@ -6,7 +6,8 @@ import { Component, OnInit,Input,Output ,EventEmitter} from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-@Input()public ParentData;
+//this line is to get data from parent component (we have to use decorator called @input() to the reference variable)
+  @Input()public ParentData;
 @Output()  public Childevent=new EventEmitter()
 
   constructor() { }
